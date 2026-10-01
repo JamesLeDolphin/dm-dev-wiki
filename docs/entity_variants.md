@@ -8,9 +8,9 @@ Dalek Mod 1.20.1 allows adding custom variants to specific entities, all through
 
 This system is currently supported by three entities:
 
-- [Daleks](./data_entities/daleks)
-- [Cybermen](./data_entities/cybermen)
-- [Autons](./data_entities/autons)
+- [Daleks](./data_entity/daleks)
+- [Cybermen](./data_entity/cybermen)
+- [Autons](./data_entity/autons)
 
 While Dalek and Cyberman variants allow for more modifications, auton variants only allow adding new skins.
 
