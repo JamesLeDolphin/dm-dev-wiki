@@ -6,7 +6,7 @@ nav_order: 3
 
 # Add Conditions
 
-Add conditions can be used to control whether dalek mod should add a feature or not. 
+Add conditions can be used to control whether Dalek Mod should add a feature or not. 
 
 For example, only adding if another mod is present, or only adding on specific occasions (Advent etc.)
 

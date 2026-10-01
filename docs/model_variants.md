@@ -6,7 +6,7 @@ nav_order: 4
 
 # Model Variants
 
-"Model variants" are dalekmod 1.20's equivalent to the model inheritance systems from [JavaJSON](https://github.com/Bug1312/JavaJSONLib) and [block/item](https://minecraft.wiki/w/Tutorial:Models) models, because geckolib doesn't have a way to do that normally.
+"Model variants" are Dalek Mod 1.20's equivalent to the model inheritance systems from [JavaJSON](https://github.com/Bug1312/JavaJSONLib) and [block/item](https://minecraft.wiki/w/Tutorial:Models) models, because geckolib doesn't have a way to do that normally.
 
 > **"Wouldn't be dalekmod without a special dalekmod-specific model system."**
 >
