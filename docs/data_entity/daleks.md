@@ -1,0 +1,8 @@
+---
+title: Daleks
+layout: default
+---
+
+# Daleks
+As of 1.20.1 update, Dalek Mod supports adding custom daleks via data packs. To do this, create a new JSON file in `data/{modid}/dalek_variants/` folder.
+
