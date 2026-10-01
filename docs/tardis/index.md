@@ -4,8 +4,11 @@ layout: default
 nav_order: 1
 ---
 
+Table of contents:
 - TOC
 {:toc}
+
+* * *
 
 # TARDIS
 Dalek Mod allows adding custom TARDIS interiors, exteriors, destinations and exterior layers via data packs.
