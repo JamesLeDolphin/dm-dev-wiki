@@ -4,6 +4,9 @@ layout: default
 nav_order: 2
 ---
 
+- TOC
+{:toc}
+
 # Data Entity Variants
 Dalek Mod 1.20.1 allows adding custom variants to specific entities, all through data- and resource packs. 
 
