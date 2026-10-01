@@ -3,6 +3,3 @@ description: Wiki for Dalek Mod addon developers
 theme: just-the-docs
 
 url: https://jamesledolphin.github.io/dm-dev-wiki
-
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
