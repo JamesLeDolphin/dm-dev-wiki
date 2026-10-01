@@ -20,10 +20,10 @@ Path: `data/{modid}/tardis/destinations/`
 ```json
 {
     "name": "Overworld", //Optional: Pretty name of the dimension
-	"dimension": "minecraft:overworld", //Required: Dimension
-	"icon": "dalekmod:overworld", //Required: Path to the icon shown on Dimensional Selector Panel. Icon file must be in {modid}:textures/planets/{path}.
+    "dimension": "minecraft:overworld", //Required: Dimension
+    "icon": "dalekmod:overworld", //Required: Path to the icon shown on Dimensional Selector Panel. Icon file must be in {modid}:textures/planets/{path}.
     "needs_card": false, //Optional: Whether the dimension needs to be unlocked with a dimension data card or not. Defaults to false.
-	"coordinate": [0, 0] //Optional: Defaults to [0, 0]
+    "coordinate": [0, 0] //Optional: Defaults to [0, 0]
 }
 ```
 
