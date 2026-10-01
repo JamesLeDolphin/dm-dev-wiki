@@ -2,6 +2,7 @@
 title: Cybermen
 layout: default
 parent: Data Entity Variants
+nav_order: 1
 ---
 
 # Cybermen

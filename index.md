@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order: 0
 ---
 
 # 1.20 Addon Dev Wiki

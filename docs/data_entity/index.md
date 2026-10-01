@@ -1,6 +1,7 @@
 ---
 title: Data Entity Variants
 layout: default
+nav_order: 1
 ---
 
 # Data Entity Variants

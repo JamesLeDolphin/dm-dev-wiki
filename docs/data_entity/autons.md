@@ -2,6 +2,7 @@
 title: Autons
 layout: default
 parent: Data Entity Variants
+nav_order: 2
 ---
 
 # Autons

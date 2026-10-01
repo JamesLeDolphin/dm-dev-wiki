@@ -2,6 +2,7 @@
 title: Daleks
 layout: default
 parent: Data Entity Variants
+nav_order: 0
 ---
 
 # Daleks
