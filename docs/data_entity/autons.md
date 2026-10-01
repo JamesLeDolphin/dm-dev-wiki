@@ -18,9 +18,12 @@ To add a custom auton skin, create a new json file at `data/{modid}/auton_skins/
 }
 ```
 
-Model field in auton skin json file must point to a file in `assets/{id}/variants/entity/auton/` folder. This file is used by the client to actually get the autons model and texture.
+Model field in auton skin json file can be a subpath for the [defaulted geo model](https://github.com/bernie-g/geckolib/wiki/Geo-Models-(Geckolib4)#defaulted-models) (the subtype is `entity/auton`).
+
+[Model Variants](../model_variants) are also supported.
 
 ```json
+// dalekmod:variants/entity/auton/blue_auton.variant.json
 {
     "parent": "dalekmod:auton", //Model to use
     "texture": "dalekmod:blue_auton" //Texture to use
