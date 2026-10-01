@@ -1,6 +1,7 @@
 ---
 title: Data Entity Variants
 layout: default
+parent: Home
 ---
 
 # Data Entity Variants

@@ -1,6 +1,7 @@
 ---
 title: Daleks
 layout: default
+parent: Data Entity Variants
 ---
 
 # Daleks
