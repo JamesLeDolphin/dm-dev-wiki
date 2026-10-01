@@ -4,4 +4,5 @@ theme: just-the-docs
 color_scheme: dark
 
 favicon_ico: "images/favicon.ico"
+logo: "images/icon.png"
 url: https://jamesledolphin.github.io/dm-dev-wiki
