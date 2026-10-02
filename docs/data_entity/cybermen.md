@@ -3,6 +3,7 @@ title: Cybermen
 layout: default
 parent: Data Entity Variants
 nav_order: 1
+has_toc: false
 ---
 
 - TOC
