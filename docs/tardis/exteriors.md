@@ -76,9 +76,9 @@ Example client exterior JSON file:
 {
     //Exterior Entry Resource Location
     "dalekmod:pillar": {
-        "model": "dalekmod:geo/tardis/pillar.geo.json", //Required: Model for this exterior enty
-        "texture": "dalekmod:textures/tardis/pillar.png", //Required: Texture for this exterior enty
-        "animation": "dalekmod:animations/tardis/pillar.animation.json", //Required: Animation for this exterior enty
+        "model": "dalekmod:geo/tardis/pillar.geo.json", //Required: Model for this exterior entry
+        "texture": "dalekmod:textures/tardis/pillar.png", //Required: Texture for this exterior entry
+        "animation": "dalekmod:animations/tardis/pillar.animation.json", //Required: Animation for this exterior entry
         "boti_portal": { //Optional: See Configuring BOTI section.
             "bounds": {
             "x": -0.5,
