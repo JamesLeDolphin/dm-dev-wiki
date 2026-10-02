@@ -93,7 +93,7 @@ Inflicts a potion effect when hitting an entity.
 
 | Property         | Type                                   | Description                                | Default | Required |
 | --------         | ----                                   | -----------                                | ------- | -------- |
-| `effect`         | [ResourceLocation] to a [MobEffect]    | Size of the explosion                      | N/A     | ✅       |
+| `effect`         | [ResourceLocation] to a [MobEffect]    | The potion effect to give                  | N/A     | ✅       |
 | `duration_ticks` | Integer                                | Amount of ticks the effect should last for | N/A     | ✅       |
 | `amplifier`      | Integer                                | Amplifier for the effect                   | `0`     | ❌       |
 
