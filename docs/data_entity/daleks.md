@@ -69,11 +69,11 @@ Example dalek JSON file:
 | --------           | ----                                                       | -----------                                                | -------                                         | -------- |
 | `name`             | [Component](https://misode.github.io/text-component/)      | Name of the dalek. Please use translatable components here | N/A                                             | ✅       |
 | `entries`          | List\<[Entry](#entries)>                                   | Entries for this dalek variant                             | N/A                                             | ✅       |
-| `max_health`       | [DifficultyBasedValue]\<Float> | Max health                                                 | N/A                                             | ✅       |
+| `max_health`       | [DifficultyBasedValue]\<Float>                             | Max health                                                 | N/A                                             | ✅       |
 | `laser_type`       | [ArmBasedValue]\<[Resource Location]>                      | The laser type that will be fired                          | N/A                                             | ✅       |
 | `sounds`           | [Sounds]                                                   | The sounds played by this dalek                            | (see [Sounds])                                  | ❌       |
 | `attack_damage`    | [DifficultyBasedValue]\<Float>                             | How much damage the dalek does                             | `2`                                             | ❌       |
-| `move_speed`       | [DifficultyBasedValue]\<Float> | How fast the dalek can move                                | `0.35`                                          | ❌       |
+| `move_speed`       | [DifficultyBasedValue]\<Float>                             | How fast the dalek can move                                | `0.35`                                          | ❌       |
 | `can_fly`          | Boolean                                                    | Should this dalek be able to fly?                          | `false`                                         | ❌       |
 | `can_burn`         | Boolean                                                    | False if the dalek is immune to fire                       | `false`                                         | ❌       |
 | `left_arm_chance`  | [ArmChance]                                                | The left arms this dalek is able to have                   | (see [Default Left Arms](#default-left-arms))   | ❌       |
@@ -82,26 +82,6 @@ Example dalek JSON file:
 | `actions`          | [Actions]                                                  | [Actions] for this dalek                                   | (none)                                          | ❌       |
 | `faction`          | [DalekFaction]                                             | The faction for this dalek                                 | `"misc"`                                        | ❌       |
 | `add_conditions`   | [AddConditions](../add_conditions)                         | Conditions for this dalek variant to be added              | (none)                                          | ❌       |
-
-<!-- ```java -->
-<!-- 	public static final Codec<DalekVariant> CODEC = RecordCodecBuilder.create(inst -> inst.group( -->
-<!-- 		// ExtraCodecs.COMPONENT.fieldOf("name").forGetter(DalekVariant::name), -->
-<!-- 		// Codec.INT.fieldOf("max_health").forGetter(DalekVariant::maxHealth), -->
-<!-- 		// ArmBasedValue.codecWithFallback(ResourceLocation.CODEC).fieldOf("laser_type").forGetter(DalekVariant::laserType), -->
-<!-- 		// Sounds.CODEC.optionalFieldOf("sounds", Sounds.DEFAULT).forGetter(DalekVariant::sounds), -->
-<!-- 		// DMExtraCodecs.withAlternative(DifficultyBasedValue.FLOAT_CODEC, floatToValue()).fieldOf("attack_damage").forGetter(DalekVariant::attackDamage), -->
-<!-- 		// DMExtraCodecs.withAlternative(DifficultyBasedValue.FLOAT_CODEC, floatToValue()).optionalFieldOf("move_speed", new DifficultyBasedValue<>(0.2f, 0.2f, 0.2f)).forGetter(DalekVariant::moveSpeed), -->
-<!-- 		// Codec.BOOL.optionalFieldOf("can_fly", false).forGetter(DalekVariant::canFly), -->
-<!-- 		// Codec.BOOL.optionalFieldOf("can_burn", false).forGetter(DalekVariant::canBurn), -->
-<!-- 		// ArmChance.CODEC.optionalFieldOf("left_arm_chance", ArmChance.DEFAULT_LEFT).forGetter(DalekVariant::leftArmChance), -->
-<!-- 		// ArmChance.CODEC.optionalFieldOf("right_arm_chance", ArmChance.DEFAULT_RIGHT).forGetter(DalekVariant::rightArmChance), -->
-<!-- 		// Codec.FLOAT.optionalFieldOf("charge_time", 1f).forGetter(DalekVariant::chargeTime), -->
-<!-- 		// Entry.CODEC.listOf().fieldOf("entries").forGetter(DalekVariant::entries), -->
-<!-- 		// Actions.CODEC.optionalFieldOf("actions", Actions.EMPTY).forGetter(DalekVariant::actions), -->
-<!-- 		DalekFaction.CODEC.optionalFieldOf("faction", DalekFaction.MISC).forGetter(DalekVariant::dalekFaction), -->
-<!-- 		// AddConditions.CODEC.optionalFieldOf("add_conditions", AddConditions.NONE).forGetter(DalekVariant::addConditions) -->
-<!-- 	).apply(inst, DalekVariant::new)); -->
-<!-- ``` -->
 
 ## Sounds
 You can override the sounds that the dalek plays. The sounds are specified as [ArmBasedValue]s of [Resource Location]s for the value.
@@ -202,7 +182,7 @@ If you specify the `ArmChance`, all unset values will default to `0`.
 ### Arm-Based Values
 Some values in Dalek Variants can depend on which arm the dalek currently has.
 
-> ```json       
+> ```json
 > "laser_type": {
 >     "flamethrower": "dalekmod:fire",
 >     "default": "dalekmod:blue"
