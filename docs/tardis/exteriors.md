@@ -51,10 +51,10 @@ Example exterior JSON file:
 | `hitbox_visual`               | List<Integer>                                     | Visual shape of the exterior collision box.                               | [0, 0, 0, 16, 32, 16]                   | ❌       |
 | `add_conditions`        | [AddConditions](../add_conditions)                           | Conditions for this exterior to be added                    | (none)                | ❌       |
 
-## Entries
+### Entries
 An entry is a [Resource Location] that points to a client exterior entry with the matching name. All exteriors must have at least one entry.
 
-## Sounds
+### Sounds
 You can override the sounds that the exterior plays. The sounds are specified as [Resource Location]s for the value.
 
 All sounds are optional, and will play the default when unset. You can set it to `minecraft:intentionally_empty` if you want no sound to be played
