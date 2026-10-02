@@ -2,6 +2,7 @@
 title: Model Variants
 layout: default
 nav_order: 4
+has_toc: false
 ---
 
 # Model Variants
