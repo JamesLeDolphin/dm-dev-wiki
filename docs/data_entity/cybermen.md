@@ -10,13 +10,11 @@ nav_order: 1
 * * *
 
 # Cybermen
-To add custom cyberman variants with a data pack, create a new JSON file in `data/{modid}/cyberman_variants/` folder.
 
-## Cyberman Variants
+As of the 1.20.1 update, Dalek Mod supports adding custom cybermen via data packs.
+To add custom cyberman variants, create a new JSON file in `data/{modid}/cyberman_variants/` folder.
 
-To add a cyberman variant, create a new json file at `data/{modid}/cyberman_variants/`.
-
-Here's the cybus cyberman for example:
+Example cyberman JSON file:
 ```json
 {
   "name": {
