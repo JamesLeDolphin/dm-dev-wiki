@@ -56,7 +56,7 @@ Example cyberman JSON file:
 | `entries`               | List\<[Entry](#entries)>                                     | The entries for this cyberman variant                               | N/A                   | ✅       |
 | `max_health`            | [DifficultyBasedValue](./#difficulty-based-values)\<Float>   | The max health                                                      | `40`                  | ❌       |
 | `gun_chance`            | [DifficultyBasedValue](./#difficulty-based-values)\<Float>   | The chance that the cyberman can have a gun (0 = never; 1 = always) | `0.2`                 | ❌       |
-| `laser_type`            | ResourceLocation                                             | The laser type that will be fired                                   | `dalekmod:orange`     | ❌       |
+| `laser_type`            | [Resource Location]                                          | The laser type that will be fired                                   | `dalekmod:orange`     | ❌       |
 | `sounds`                | [Sounds](#sounds)                                            | The sounds played by this cyberman                                  | (see default sounds)  | ❌       |
 | `attack_damage`         | [DifficultyBasedValue](./#difficulty-based-values)\<Float>   | The attack damage                                                   | `2`                   | ❌       |
 | `move_speed`            | [DifficultyBasedValue](./#difficulty-based-values)\<Float>   | The movement speed                                                  | `0.35`                | ❌       |
@@ -66,7 +66,7 @@ Example cyberman JSON file:
 | `add_conditions`        | [AddConditions](../add_conditions)                           | Conditions for this cyberman variant to be added                    | (none)                | ❌       |
 
 ## Sounds
-You can override the sounds that the cyberman plays. The sounds are specified as `ResourceLocation`s for the value.
+You can override the sounds that the cyberman plays. The sounds are specified as [Resource Location]s for the value.
 
 All sounds are optional, and will play the default when unset. You can set it to `minecraft:intentionally_empty` if you want no sound to be played
 
@@ -108,3 +108,5 @@ The heads use the subtype `block/cyberman_head` for the model, and `entity/cyber
 For example, the head model for `mymod:my_cyberman` will be in `mymod:geo/block/cyberman_head/my_cyberman.geo.json`
 
 For the head model, you can just copy the entity model, delete everything except for the head, and drop it down so it's not floating.
+
+[Resource Location]: https://minecraft.wiki/w/Identifier
