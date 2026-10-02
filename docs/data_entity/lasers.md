@@ -6,6 +6,10 @@ nav_order: 3
 has_toc: false
 ---
 
+- TOC
+{:toc}
+* * *
+
 # Lasers
 As of the 1.20.1 update, Dalek Mod supports adding custom laser types via data packs. To do this, create a new JSON file in `data/{modid}/laser_types/` folder.
 > **Example**: Orange laser (<span style="color: rgb(255,140,60);">rgb(255,140,60)</span>)
