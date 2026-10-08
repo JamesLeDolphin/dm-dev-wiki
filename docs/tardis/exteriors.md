@@ -76,9 +76,9 @@ Example client exterior JSON file:
 {
     //Exterior Entry Resource Location
     "dalekmod:pillar": {
-        "model": "dalekmod:geo/tardis/pillar.geo.json", //Required: Model for this exterior enty
-        "texture": "dalekmod:textures/tardis/pillar.png", //Required: Texture for this exterior enty
-        "animation": "dalekmod:animations/tardis/pillar.animation.json", //Required: Animation for this exterior enty
+        "model": "dalekmod:geo/tardis/pillar.geo.json", //Required: Model for this exterior entry
+        "texture": "dalekmod:textures/tardis/pillar.png", //Required: Texture for this exterior entry
+        "animation": "dalekmod:animations/tardis/pillar.animation.json", //Required: Animation for this exterior entry
         "boti_portal": { //Optional: See Configuring BOTI section.
             "bounds": {
             "x": -0.5,
@@ -103,8 +103,21 @@ As of 1.20.1 Dalek Mod switched away from JavaJSON and is now using GeckoLib ins
 > Missing model/texture TARDIS exterior.
 
 ### Configuring BOTI
-Bigger On The Inside (BOTI) is a feature allowing players to see the interior of the TARDIS from the exterior. Custom exteriors can configure where and how the BOTI effect will render.
- 
+Bigger On The Inside (BOTI) is a feature allowing players to see the interior of the TARDIS from the exterior. 
+
+Custom exteriors can configure where and how the BOTI effect will render.
+
+There are two ways to configure the boti portal:
+
+#### In the Model
+
+You can add a bone with the name `portal` to your geo model; any visible pixels on this bone will be rendered as BOTI, this is useful if your door needs to not be a rectangle.
+> ![](../../images/halloween_box_boti_portal.png)
+> BOTI portal on the halloween box. Only the inside is textured, to make the portal fit inside the slanted doors.
+
+#### In the JSON
+
+You can also specify the `boti_portal` in the exterior entry JSON; this is useful if you already have a model and don't want to resave it to add a bone.
 
 ```json
 "boti_portal": {
