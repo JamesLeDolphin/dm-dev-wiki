@@ -65,7 +65,9 @@ ID: dalekmod:summon
 {
     "type": "dalekmod:summon", //Required: Specify Death Action type.
     "entity_type": "minecraft:pig", //Required: Type of entity to summon.
-    "chance": 1.0 //Optional: Chance the entity will be summoned.
+    "chance": 1.0, //Optional: Chance the entity will be summoned.
+    "min": 1, //Optional: Minimum amount of entities to spawn. Must be larger or equal to 1. Defaults to 1.
+    "max": 1 //Optional: Maximum amount of entities to spawn. Must be larger or equal to 1. Defaults to 1.
 }
 ```
 

@@ -32,6 +32,15 @@ Example cyberman JSON file:
     "normal": true,
     "hard": false
   },
+  "actions": {
+    "death": {
+      "type": "dalekmod:summon",
+      "entity_type": "dalekmod:cybermat",
+      "chance": 0.1428,
+      "min": 1,
+      "max": 3
+    }
+  },
   "entries": [
     {
       "id": "dalekmod:cybus_cyberman",
@@ -63,7 +72,7 @@ Example cyberman JSON file:
 | `move_speed`            | [DifficultyBasedValue](./#difficulty-based-values)\<Float>   | The movement speed                                                  | `0.35`                | ❌       |
 | `can_burn`              | [DifficultyBasedValue](./#difficulty-based-values)\<Boolean> | False if the cyberman is immune to fire                             | `true`                | ❌       |
 | `allergic_to_gold`      | [DifficultyBasedValue](./#difficulty-based-values)\<Boolean> | True if the cyberman is allergic to gold                            | `true`                | ❌       |
-| `cybermat_chance`       | [DifficultyBasedValue](./#difficulty-based-values)\<Float>   | The chance of spawning cybermats                                    | `0.14285715` (1/7)    | ❌       |
+| `actions`       | [Entity Actions](./index#actions)   | Death, hurt and interact events for this cyberman variant                                    | none    | ❌       |
 | `add_conditions`        | [AddConditions](../add_conditions)                           | Conditions for this cyberman variant to be added                    | (none)                | ❌       |
 
 ## Sounds
