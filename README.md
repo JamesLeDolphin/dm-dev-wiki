@@ -9,3 +9,20 @@ If you wish to add to the wiki, don't be afraid to open a pull request.
 
 [Dalek Mod on CurseForge](https://www.curseforge.com/minecraft/mc-mods/the-dalek-mod)  
 [Dalek Mod on Modrinth](https://modrinth.com/mod/dalek-mod)  
+
+## Building and previewing the wiki locally
+
+Assuming [Jekyll] and [Bundler] are installed on your computer:
+
+1.  Change your working directory to the root directory of your site.
+
+2.  Run `bundle install`.
+
+3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
+
+    The built site is stored in the directory `_site`.
+
+
+
+[Jekyll]: https://jekyllrb.com
+[Bundler]: https://bundler.io
