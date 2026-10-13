@@ -50,7 +50,7 @@ Example exterior JSON file:
 | `sounds`              | [Sounds](#sounds)                                     | Sounds played by this exterior.                                                                   | (see default sounds)  | ❌       |
 | `hitbox`              | List<Integer>                                         | Exterior collision shape.                                                                         | [0, 0, 0, 16, 32, 16] | ❌       |
 | `hitbox_visual`       | List<Integer>                                         | Visual shape of the exterior collision box.                                                       | [0, 0, 0, 16, 32, 16] | ❌       |
-| `add_conditions`      | [AddConditions](../add_conditions)                    | Conditions for this exterior to be added                                                          | (none)                | ❌       |
+| `add_conditions`      | [AddConditions](../add_conditions)                    | Conditions for this exterior to be added.                                                         | (none)                | ❌       |
 
 ### Entries
 An entry is a [Resource Location] that points to a client exterior entry with the matching name. All exteriors must have at least one entry.

@@ -1,7 +1,7 @@
 ---
 title: Food Machine Items
 layout: default
-nav_order: 6
+nav_order: 4
 has_toc: false
 ---
 

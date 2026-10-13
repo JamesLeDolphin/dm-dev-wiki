@@ -1,7 +1,7 @@
 ---
 title: Storm Spawner Item Lists
 layout: default
-nav_order: 5
+nav_order: 3
 has_toc: false
 ---
 
@@ -13,7 +13,6 @@ To add a custom list, create a new json file at `data/{modid}/storm/spawn/`.
 
 ```json
 {
-  "id": "dalekanium", // Name of the list
   "items": [ // Items required
     {
       "item": "dalekmod:emblemized_dalekanium_block",
@@ -30,3 +29,12 @@ To add a custom list, create a new json file at `data/{modid}/storm/spawn/`.
   ]
 }
 ```
+
+| Property          | Type                  | Description                                  | Default               | Required |
+| --------          | ----                  | -----------                                  | -------               | -------- |
+| `items`           | List<[ItemWithCount]> | The items required to spawn the Dalek Storm. | N/A                   | ✅       |
+| `add_conditions`  | [AddConditions]       | Conditions for this list to be added.        | (none)                | ❌       |
+
+
+[AddConditions]: ./add_conditions
+[ItemWithCount]: ./item_with_count
