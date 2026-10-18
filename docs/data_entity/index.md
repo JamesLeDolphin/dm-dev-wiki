@@ -123,3 +123,13 @@ ID: dalekmod:eat
     "damage": -1 //Required: Damage to deal to the entity being eaten. -1 removes the entity from world without killing it.
 }
 ```
+
+#### Ignite
+Ignites the entity. Special case for igniting suicide-bomber daleks with flint and steel. 
+
+ID: dalekmod:ignite
+```json
+{
+    "type": "dalekmod:ignite" //Required: Specify Interaction Action type.
+}
+```
