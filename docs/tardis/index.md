@@ -38,7 +38,7 @@ Path: `data/{modid}/tardis/layers/`
     //List of blocks that would make the TARDIS exterior apply this layer
     "blocks": [
         "minecraft:snow",
-        "#minecraft:ice"
+        "minecraft:ice"
     ],
     //List of biomes that would make the TARDIS exterior apply this layer
     "biomes": [
